@@ -115,42 +115,49 @@ button:active{
 }
 .answer{
 	// border:1px solid rebeccapurple;
-	background:#80cbae;
 	width:45%;
 	display:flex;
 	align-items:center;
+<<<<<<< HEAD
 	transition:0.2s;
 
 	&:hover {
 		background:#5eb693;
 		cursor:pointer;
 	}
+=======
+>>>>>>> c4e9ac653227290e9e6b1e0c819b13994d8b0214
 	label{
 		font-size: 1.2rem;
 		color:white;
 		letter-spacing: 1px;
+<<<<<<< HEAD
 		padding:10px 5px 10px 15px;
 
 		&:checked {
 			background:#5eb693;
 		}
+=======
+		padding:10px 15px;
+		background:#80cbae;
+		height:50px;
+>>>>>>> c4e9ac653227290e9e6b1e0c819b13994d8b0214
 	}
 	input[type=text]{
-		padding:10px 15px 10px 5px;
+		padding:10px 15px 10px 0;
 		width:100%;
 		border:none;
 		background:transparent;
 		color:white;
 		outline:none;
-		&:hover {
-			background:#5eb693;
-		}
-	}
-	&input[type=text]:selected {
-		border-bottom:3px solid red;
+		background:#80cbae;
+		height:50px;
 	}
 	input[type=radio]{
 		display:none;
+		&:checked ~ label {
+			background:#5eb693;
+		}
 	}
 	label.healthy__label{
 		text-transform: uppercase;
@@ -159,6 +166,10 @@ button:active{
 		display:flex;
 		align-items:center;
 		justify-content:center;
+		cursor:pointer;
+		&:hover {
+			background:#5eb693;
+		}
 	}
 }
 
