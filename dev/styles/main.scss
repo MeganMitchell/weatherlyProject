@@ -119,6 +119,8 @@ button:active{
 	width:45%;
 	display:flex;
 	align-items:center;
+	transition:0.2s;
+
 	&:hover {
 		background:#5eb693;
 		cursor:pointer;
@@ -128,6 +130,10 @@ button:active{
 		color:white;
 		letter-spacing: 1px;
 		padding:10px 5px 10px 15px;
+
+		&:checked {
+			background:#5eb693;
+		}
 	}
 	input[type=text]{
 		padding:10px 15px 10px 5px;
